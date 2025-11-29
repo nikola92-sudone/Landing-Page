@@ -1,6 +1,29 @@
+.header dark-container{
+  display: flex;
+  background-color: #1F2937;
+}
+
+.logo{
+  
+}
+
 .button {
   background-color: #3882f6;
   color: white;
   padding: 10px 25px;
   border-radius: 8px;
+}
+
+.quote-section p {
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    color: #1F2937;
+}
+
+blockquote footer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
 }
