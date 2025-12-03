@@ -1,17 +1,133 @@
-.header dark-container{
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 25px;
+}
+
+.header-dark-container {
   display: flex;
+  justify-content: space-between;  /* logo left, nav right */
+  align-items: center;              /* center vertically */
+  padding: 20px 150px;              /* spacing like Odin */
   background-color: #1F2937;
 }
 
-.logo{
-  
+/* Logo text */
+.logo {
+  font-family: 'Roboto', sans-serif;
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
 }
 
-.button {
+/* Nav list container */
+.nav-links {
+  display: flex;
+  gap: 20px;            /* spacing between links */
+  list-style: none;     /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+.nav-links a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dark-container-hero{
+  display: flex;
+  background-color: #1F2937;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: clamp(1rem, 3vw, 4rem);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centers everything horizontally */
+  text-align: center;       /* centers the text itself */
+  max-width: 60ch;         /* controls line length for nicer wrapping */
+  gap: 10px;
+}
+
+.hero-text h2,
+.hero-text p {
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #F9FAF8;
+  font-weight: bold;
+}
+
+.hero-text p{
+  color: #F9FAF8;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-primary{
   background-color: #3882f6;
   color: white;
   padding: 10px 25px;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  width: fit-content;
+  align-self: center;
+}
+
+.hero-image img{
+  height: auto;
+  width: 450px;
+}
+
+.info-section{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;        /* centers the heading */
+  padding: 20px 0;
+}
+.info-section h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  color: #1F2937;
+  margin-bottom: 20px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;   /* centers the images horizontally */
+  gap: 0px;                 /* spacing between each image */
+  flex-wrap: wrap; 
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;              /* makes all cards consistent size */
+}
+
+.info-card img{
+  width: 100%;
+  padding: 0px;
+  border-radius: 15px;
+  border: 6px solid #3882F6;
+}
+
+.info-card figcaption{
+  margin: 0px;
+  padding: 12px;
 }
 
 .quote-section p {
