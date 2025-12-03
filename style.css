@@ -94,7 +94,7 @@ figure {
 .info-section{
   font-family: 'Roboto', sans-serif;
   text-align: center;        /* centers the heading */
-  padding: 20px 0;
+  padding: 50px 0;
 }
 .info-section h3 {
   text-align: center;
@@ -130,6 +130,11 @@ figure {
   padding: 12px;
 }
 
+.quote-section{
+  background-color:#E5E7EB ;
+  padding: 80px 200px; 
+}
+
 .quote-section p {
     font-size: 36px;
     font-style: italic;
@@ -142,4 +147,59 @@ blockquote footer {
     font-weight: bold;
     text-align: right;
     margin-top: 20px;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  padding-block: clamp(4rem, 7vw, 10rem);  /* controls HEIGHT */
+  padding-inline: 1rem; 
+  font-family: 'Roboto', sans-serif; 
+  color: #F9FAF8;                   /* optional side spacing */
+}
+
+.blue-sign-up-container {
+  display: flex;
+  align-items: center;                     /* vertically center text + button */
+  justify-content: space-between;          /* text left, button right */
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 3rem 5rem;                    /* inner space in the blue bar */
+  width: 100%;
+  max-width: 1000px;                        /* don’t let it get too wide */
+  box-sizing: border-box;
+  gap: 2rem;                               /* reasonable space between text & button */
+}
+
+/* text block */
+.sign-up-text h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sign-up-text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* button */
+.sign-up-button {
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: 2px solid #F9FAF8;
+  background: transparent;
+  color: #F9FAF8;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.final-footer{
+  display: flex;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
